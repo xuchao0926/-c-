@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct a
+{
+   int b;
+   char c;
+};
+
+
+
+
+int main()
+{
+
+struct a x={2,'b'};
+x.b=38;
+struct a*p=&x;
+//printf("%c\n",(*p).c);
+printf("%d\n",(*p).b);
+printf("%c\n",p->c);
+    return 0;
+}
